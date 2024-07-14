@@ -207,24 +207,37 @@
                       </div>
                     </div>
 
-                    <div class="flex justify-end gap-2">
-                      <button
-                        class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5">
-                        <a href="https://github.com/nurulrizka/datamining">Repo Github</a>
-                      </button>
-                      {% if disease is none %}
-                      <button type="reset" id="clear-button"
-                        class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5">
-                        Reset
-                      </button>
-                      {% endif %}
-                      <button type="submit" {% if disease == 2  %}
-                        class="text-blue-700 bg-white hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
-                        {% else %}
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
-                        {% endif %}>
-                        {% if disease is none %} Cek {% else %} Cek Kembali {% endif %}
-                      </button>
+                    <div class="flex gap-2">
+                      <div class="flex w-1/2 justify-start gap-x-5">
+                        <button
+                          class="text-gray-900 bg-pink-200 border border-gray-300 focus:outline-none hover:bg-pink-300 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5">
+                          <a
+                            href="https://deepnote.com/workspace/datamining-0ddb-cd5f8e70-6efc-4a72-82a6-9b71a1dbdce8/project/datamining-6a17519b-db04-44a0-b917-1c577ec69750/notebook/ILPD%20-%20UAS-7a0f9038e4374338b15c9a116fe8c026">Deepnote</a>
+                        </button>
+                        <button
+                          class="text-gray-900 bg-indigo-200 border border-gray-300 focus:outline-none hover:bg-indigo-300 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5">
+                          <a href="https://nurulrizka.github.io/ilpd-uas/ILPD-UAS.html">Jupyter Book</a>
+                        </button>
+                        <button
+                          class="text-gray-900 bg-green-200 border border-gray-300 focus:outline-none hover:bg-green-300 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5">
+                          <a href="https://github.com/nurulrizka/ilpd-app">Repo App</a>
+                        </button>
+                      </div>
+                      <div class="flex w-1/2 justify-end gap-x-5">
+                        {% if disease is none %}
+                        <button type="reset" id="clear-button"
+                          class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5">
+                          Reset
+                        </button>
+                        {% endif %}
+                        <button type="submit" {% if disease == 2  %}
+                          class="text-blue-700 bg-white hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                          {% else %}
+                          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                          {% endif %}>
+                          {% if disease is none %} Cek {% else %} Cek Kembali {% endif %}
+                        </button>
+                      </div>
                     </div>
                   </form>
                 </div>
